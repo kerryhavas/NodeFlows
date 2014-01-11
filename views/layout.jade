@@ -1,0 +1,68 @@
+!!! 5
+html
+  head
+    title= title
+    
+    // include default stylesheets and any view stylesheets
+    link(rel='stylesheet', href=base + '/stylesheets/style.css')
+    
+    // include default scripts and any view scripts
+    script(src=base + '/javascripts/jquery-1.7.min.js')
+    
+  body   
+    header
+      div(class='content-wrapper')
+        div(class="float-left")
+          p(class="site-title")
+            a(href="/") NodeFlows!
+        div(class="float-right")
+          section#login
+            ul
+              li
+                a(href="/log/history?clearhistory=true") ClearHistory
+              li
+                a(href="/log/history/") Log
+              li
+                a(href="/workflows/definitions") Workflow Definitions
+              li
+                a(href="/workflows/select/") Start Workflow
+              li
+                a(href="/") Register
+              li
+                a(href="/") Log in
+              li
+                a(href="/PizzaSite/PizzaDashboard/") Pizza Dashboard
+          nav
+            ul#menu
+              li 
+                a(href="/") Home
+              //li 
+              //  a(href="/chat") Chat
+              //li
+              //  a(href="/about") About
+              li
+                a(href="/workflows/active/") Active Workflows
+              li
+                a(href="/workflows/history") Workflow History
+
+              li
+                a(href="/queue/active/") Active Queue
+              li
+                a(href="/queue/history/") Queue History
+              li
+                a(href="/queue/workers/") Workers
+              li
+                a(href="/stats/view/") Stats
+
+                
+    #body!= body
+      
+    footer
+      div(class="content-wrapper")
+        div(class="float-left")
+          p &copy; !{(new Date()).getFullYear()}
+        div(class="float-right")
+          ul#social
+            li
+              a(href="http://facebook.com", class="facebook") Facebook
+              a(href="http://twitter.com", class="twitter") Twitter

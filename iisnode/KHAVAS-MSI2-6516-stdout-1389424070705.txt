@@ -1,0 +1,97 @@
+Logging>>Get workflowHistoryEnabled:true
+Logging>>Getting workflowHistoryEnabled:true
+Logging>>Setting workflowHistoryEnabled to:true
+Logging>>Set workflowHistoryEnabled to:true
+Logging>>Get workflowHistoryEnabled:true
+Logging>>Getting workflowHistoryEnabled2:true
+info: socket.io started
+Logging>>Node Version:v0.8.20
+Logging>>Other Versions:{"http_parser":"1.0","node":"0.8.20","v8":"3.11.10.25","ares":"1.7.5-DEV","uv":"0.8","zlib":"1.2.3","openssl":"1.0.0f"}
+Logging>>Loaded Activity:callUrlActivity
+Logging>>Loaded Activity:completeWorkflow
+Logging>>Loaded Activity:createChildWorkflow
+Logging>>Loaded Activity:getWorkingStorageValue
+Logging>>Loaded Activity:gotoStep
+Logging>>Loaded Activity:ifElseActivity
+Logging>>Loaded Activity:incrementWorkingStorage
+Logging>>Loaded Activity:insertIntoCollectionActivity
+Logging>>Loaded Activity:postUrl
+Logging>>Loaded Activity:releaseQueueWorker
+Logging>>Loaded Activity:removeMe
+Logging>>Loaded Activity:startTimer
+Logging>>Loaded Activity:stopTimer
+Logging>>Loaded Activity:trackStatistic
+Logging>>Loaded Activity:updateInitiatingWorkflowActivity
+Logging>>Loaded Activity:updateWorkflowActivity
+Logging>>Loaded Activity:waitForActivity
+Logging>>Loaded Activity:waitForTimeout
+Logging>>Loaded Activity:waitForTimer
+Logging>>Loaded Activity:writeConsoleActivity
+Logging>>Loaded Activity:writeLogActivity
+Logging>>Adding workflow from file:OrderManagement/ProcessOrder.js
+Logging>>workflowname:OrderManagement/ProcessOrder
+Logging>>historyManager_AddingSubsystem:queueWorker
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000001
+Logging>>Adding workflow from file:PizzaOrdering/cookWorkflow.js
+Logging>>workflowname:PizzaOrdering/cookWorkflow
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000002
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000003
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000004
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000005
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000006
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000007
+Logging>>Adding workflow from file:PizzaOrdering/deliveryWorkflow.js
+Logging>>workflowname:PizzaOrdering/deliveryWorkflow
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000008
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000009
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900000a
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900000b
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900000c
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900000d
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900000e
+Logging>>Adding workflow from file:PizzaOrdering/pizzaOrderingWorkflow.js
+Logging>>workflowname:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900000f
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000010
+Logging>>Adding workflow from file:Tests/testNoActivitys.js
+Logging>>workflowname:Tests/testNoActivitys
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000011
+Logging>>Adding workflow from file:Tests/testOneActivity.js
+Logging>>workflowname:Tests/testOneActivity
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000012
+Logging>>Adding workflow from file:Tests/testOneActivity_BadActivity.js
+Logging>>workflowname:Tests/testOneActivity_BadActivity
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000013
+Logging>>Adding workflow from file:Tests/testOrderOnePizzaForBadDeliveryType.js
+Logging>>workflowname:Tests/testOrderOnePizzaForBadDeliveryType
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000014
+Logging>>Adding workflow from file:Tests/testOrderOnePizzaForDelivery.js
+Logging>>workflowname:Tests/testOrderOnePizzaForDelivery
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000015
+Logging>>Adding workflow from file:Tests/testOrderOnePizzaForDeliveryWithHistory.js
+Logging>>workflowname:Tests/testOrderOnePizzaForDeliveryWithHistory
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000016
+Logging>>Adding workflow from file:Tests/testOrderOnePizzaForTakeout.js
+Logging>>workflowname:Tests/testOrderOnePizzaForTakeout
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000017
+Logging>>Adding workflow from file:Tests/testRepeatingPizzaOrders.js
+Logging>>workflowname:Tests/testRepeatingPizzaOrders
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000018
+Logging>>Adding workflow from file:Tests/testRepeatingPizzaOrders1000.js
+Logging>>workflowname:Tests/testRepeatingPizzaOrders1000
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca77419000019
+Logging>>Adding workflow from file:Tests/testRepeatingPizzaOrdersNoWait.js
+Logging>>workflowname:Tests/testRepeatingPizzaOrdersNoWait
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900001a
+Logging>>Adding workflow from file:Tests/testRepeatingPizzaOrdersNoWaitNoRelease.js
+Logging>>workflowname:Tests/testRepeatingPizzaOrdersNoWaitNoRelease
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900001b
+Logging>>Adding workflow from file:Tests/testRepeatOneActivity.js
+Logging>>workflowname:Tests/testRepeatOneActivity
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900001c
+Logging>>Adding workflow from file:Tests/testURLCall.js
+Logging>>workflowname:Tests/testURLCall
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900001d
+Logging>>Adding workflow from file:Tests/textWorkflowEndsWithNullNextStep.js
+Logging>>workflowname:Tests/textWorkflowEndsWithNullNextStep
+Logging>>historyManager_AddingSubsystemWorker:52d0edc7d8dca7741900001e

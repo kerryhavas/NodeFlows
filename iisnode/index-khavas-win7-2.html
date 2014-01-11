@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"KHAVAS-MSI-12100-stdout-1374918540973.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918540973},{"file":"KHAVAS-MSI-12100-stdout-1374918547130.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918547130},{"file":"KHAVAS-MSI-12100-stdout-1374918554844.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918554844},{"file":"KHAVAS-MSI-12100-stdout-1374918560516.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918560516},{"file":"KHAVAS-MSI-12100-stdout-1374918565923.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918565923},{"file":"KHAVAS-MSI-12100-stdout-1374918572439.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918572439},{"file":"KHAVAS-MSI-12100-stdout-1374918578126.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918578126},{"file":"KHAVAS-MSI-12100-stdout-1374918584830.txt","computername":"KHAVAS-MSI","pid":12100,"type":"stdout","created":1374918584830},{"file":"KHAVAS-MSI-14028-stderr-1374952246448.txt","computername":"KHAVAS-MSI","pid":14028,"type":"stderr","created":1374952246448},{"file":"KHAVAS-MSI-14028-stdout-1374952246432.txt","computername":"KHAVAS-MSI","pid":14028,"type":"stdout","created":1374952246432},{"file":"KHAVAS-WIN8-LT5-10872-stderr-1375122257599.txt","computername":"KHAVAS-WIN8-LT5","pid":10872,"type":"stderr","created":1375122257599},{"file":"KHAVAS-WIN8-LT5-10872-stdout-1375122257598.txt","computername":"KHAVAS-WIN8-LT5","pid":10872,"type":"stdout","created":1375122257598}];
+        var lastUpdated = 1375122258525;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

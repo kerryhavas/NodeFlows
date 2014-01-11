@@ -1,0 +1,68 @@
+#chat {
+  border: 1px solid #999;
+  background-color: #ddd;
+  overflow: auto;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.user-me {
+  font-weight: bold;
+  color: #f00;
+}
+.user {
+  font-weight: bold;
+  color: #00f;
+}
+.system {
+  color: #999;
+  font-style: italic;
+}
+
+#operationStep {
+    width:200px;
+    height:50px;
+    background-color:#ffd800;
+    margin:5px;
+    padding:5px;
+}
+
+#operationStepActive {
+    width:200px;
+    height:50px;
+    background-color:#b6ff00;
+    margin:5px;
+    padding:5px;
+}
+
+#flowStep {
+    min-width:200px;
+    min-height:50px;
+    background-color:#ffd800;
+    margin:5px;
+    padding:5px;
+    border-radius: 10px;
+}
+
+#flowContainer {
+    background-color: #ddd;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#flowAddBar {
+    text-align: center;
+    background-color: #ffd173;
+    width:200px;
+    margin:5px;
+    padding:5px;
+    border-radius: 10px;
+}
+
+#flowAddImage {
+text-align: center;
+background-color: #ffd173;
+height: 10px;
+max-height: 
+}

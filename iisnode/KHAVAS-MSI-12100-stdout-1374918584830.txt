@@ -1,0 +1,1577 @@
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":8}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":9}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>updateQueueItem:51f397b83edf5f442f000c53
+Logging>>Updating property:workflowId to 51f397b83edf5f442f000c54
+Logging>>updateQueueItem:51f397b63edf5f442f000c3b
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b63edf5f442f000c3b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>updateQueueItem:51f397b83edf5f442f000c55
+Logging>>Updating property:workflowId to 51f397b83edf5f442f000c56
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b23edf5f442f000bee
+Logging>>updateQueueItem:51f397b83edf5f442f000c57
+Logging>>Updating property:workflowId to 51f397b83edf5f442f000c58
+Logging>>updateQueueItem:51f397b73edf5f442f000c3f
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b73edf5f442f000c3f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000003
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000003
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b63edf5f442f000c3a
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":992}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b83edf5f442f000c59
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397b83edf5f442f000c5a
+Logging>>updateQueueItem:51f397b83edf5f442f000c59
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>Got initiatingWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Step0 Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:OrderReceived Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:EnterIntoComputer Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started2
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendToCook Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c5b
+Logging>>createWorkflow of type:PizzaOrdering/cookWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c5c
+Logging>>updateQueueItem:51f397b93edf5f442f000c5b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000004
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000004
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":993}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c5d
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c5e
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Step0 Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:OrderReceived Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:EnterIntoComputer Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started2
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendToCook Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c5f
+Logging>>createWorkflow of type:PizzaOrdering/cookWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c60
+Logging>>updateQueueItem:51f397b93edf5f442f000c5f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000005
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000005
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>updateQueueItem:51f397b83edf5f442f000c59
+Logging>>Updating property:workflowId to 51f397b83edf5f442f000c5a
+Logging>>updateQueueItem:51f397b53edf5f442f000c21
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c5b
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c5c
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":8}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Wake Up! Workflow:51f397b73edf5f442f000c48
+Logging>>workflowManager_getWorkflow:51f397b73edf5f442f000c48
+Logging>>Wake Up! Workflow:51f397b73edf5f442f000c4c
+Logging>>workflowManager_getWorkflow:51f397b73edf5f442f000c4c
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":994}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c61
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c62
+Logging>>updateQueueItem:51f397b93edf5f442f000c61
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaOrderReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaOrderReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PreparePizza2 Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PreparePizza2 Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:GotoStep Type:gotoStep
+Logging>>Finding Activity:gotoStep
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:GotoStep Type:gotoStep
+Logging>>Finding Activity:gotoStep
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":9}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":10}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>updateQueueItem:51f397b93edf5f442f000c5d
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c5e
+Logging>>updateQueueItem:51f397b23edf5f442f000bed
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b63edf5f442f000c39
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c5f
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c60
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":9}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397b93edf5f442f000c61
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c62
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":995}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c63
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c64
+Logging>>updateQueueItem:51f397b93edf5f442f000c63
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>Workflow Loaded!
+Logging>>Workflow Loaded!
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Step0 Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:OrderReceived Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:EnterIntoComputer Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started2
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendToCook Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c65
+Logging>>createWorkflow of type:PizzaOrdering/cookWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c66
+Logging>>updateQueueItem:51f397b93edf5f442f000c65
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000002
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000002
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":996}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c67
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c68
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>updateQueueItem:51f397b93edf5f442f000c63
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c64
+Logging>>updateQueueItem:51f397b73edf5f442f000c47
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b73edf5f442f000c47
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000003
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000003
+Logging>>updateQueueItem:51f397b73edf5f442f000c4b
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b73edf5f442f000c4b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000004
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000004
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b73edf5f442f000c44
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b73edf5f442f000c46
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":997}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c69
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c6a
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>updateQueueItem:51f397b93edf5f442f000c65
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c66
+Logging>>updateQueueItem:51f397b93edf5f442f000c67
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c68
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Step0 Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:OrderReceived Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaOrderReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:EnterIntoComputer Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started2
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PreparePizza2 Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendToCook Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:GotoStep Type:gotoStep
+Logging>>Finding Activity:gotoStep
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c6b
+Logging>>createWorkflow of type:PizzaOrdering/cookWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c6c
+Logging>>updateQueueItem:51f397b93edf5f442f000c6b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000005
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000005
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":10}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":998}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c6d
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397b93edf5f442f000c6e
+Logging>>updateQueueItem:51f397b93edf5f442f000c6d
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>Wake Up! Workflow:51f397b83edf5f442f000c52
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c52
+Logging>>Wake Up! Workflow:51f397b83edf5f442f000c56
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c56
+Logging>>updateQueueItem:51f397b93edf5f442f000c69
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c6a
+Logging>>updateQueueItem:51f397b93edf5f442f000c6b
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c6c
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaOrderReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PreparePizza2 Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:GotoStep Type:gotoStep
+Logging>>Finding Activity:gotoStep
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":11}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":999}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c6f
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c70
+Logging>>updateQueueItem:51f397ba3edf5f442f000c6f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>updateQueueItem:51f397b93edf5f442f000c6d
+Logging>>Updating property:workflowId to 51f397b93edf5f442f000c6e
+Logging>>updateQueueItem:51f397b73edf5f442f000c43
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b73edf5f442f000c45
+Logging>>Updating property:status to resume
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":10}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":9}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Step0 Type:Init
+Logging>>Skipping the Init Step
+Logging>>Workflow Loaded!
+Logging>>Workflow Loaded!
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:OrderReceived Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:EnterIntoComputer Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started2
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendToCook Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c71
+Logging>>createWorkflow of type:PizzaOrdering/cookWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c72
+Logging>>updateQueueItem:51f397ba3edf5f442f000c71
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000002
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000002
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":1000}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Restarting Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LogActivity Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartOrder Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c73
+Logging>>createWorkflow of type:PizzaOrdering/pizzaOrderingWorkflow
+Logging>>Parameters:{"deliveryType":"Delivery"}
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c74
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForTimeout Type:waitForTimeout
+Logging>>Finding Activity:waitForTimeout
+Logging>>updateQueueItem:51f397ba3edf5f442f000c6f
+Logging>>Updating property:workflowId to 51f397ba3edf5f442f000c70
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Step0 Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:OrderReceived Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:EnterIntoComputer Type:writeConsoleActivity
+Logging>>Finding Activity:writeConsoleActivity
+Logging>>Workflow has been started2
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendToCook Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c75
+Logging>>createWorkflow of type:PizzaOrdering/cookWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c76
+Logging>>updateQueueItem:51f397ba3edf5f442f000c75
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000003
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000003
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:IncrementIterations Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:OrdersPlaced amount:1
+Logging>>new working storage value:{"value":1001}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyIterations Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CompleteIf1000Iterations Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397b83edf5f442f000c51
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c51
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000004
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000004
+Logging>>updateQueueItem:51f397b83edf5f442f000c55
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c55
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000005
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000005
+Logging>>updateQueueItem:51f397ba3edf5f442f000c71
+Logging>>Updating property:workflowId to 51f397ba3edf5f442f000c72
+Logging>>updateQueueItem:51f397ba3edf5f442f000c73
+Logging>>Updating property:workflowId to 51f397ba3edf5f442f000c74
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c4e
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c50
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaOrderReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaOrderReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PreparePizza2 Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PreparePizza2 Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:GotoStep Type:gotoStep
+Logging>>Finding Activity:gotoStep
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:GotoStep Type:gotoStep
+Logging>>Finding Activity:gotoStep
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":10}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PutPizzaInOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:1
+Logging>>new working storage value:{"value":11}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookPizza Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>Wake Up! Workflow:51f397b93edf5f442f000c5c
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c5c
+Logging>>Wake Up! Workflow:51f397b93edf5f442f000c60
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c60
+Logging>>updateQueueItem:51f397ba3edf5f442f000c75
+Logging>>Updating property:workflowId to 51f397ba3edf5f442f000c76
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>Workflow Loaded!
+Logging>>Workflow Loaded!
+Logging>>updateQueueItem:51f397b83edf5f442f000c4d
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c4d
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>updateQueueItem:51f397b83edf5f442f000c4f
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c4f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":10}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":9}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397b93edf5f442f000c5b
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c5b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000002
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000002
+Logging>>updateQueueItem:51f397b93edf5f442f000c5f
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c5f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000003
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000003
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c58
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c5a
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c77
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c78
+Logging>>updateQueueItem:51f397ba3edf5f442f000c77
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c79
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397ba3edf5f442f000c7a
+Logging>>updateQueueItem:51f397ba3edf5f442f000c79
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000009
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000009
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>Wake Up! Workflow:51f397b93edf5f442f000c66
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c66
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>updateQueueItem:51f397ba3edf5f442f000c77
+Logging>>Updating property:workflowId to 51f397ba3edf5f442f000c78
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>updateQueueItem:51f397ba3edf5f442f000c79
+Logging>>Updating property:workflowId to 51f397ba3edf5f442f000c7a
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>updateQueueItem:51f397b83edf5f442f000c57
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c57
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>updateQueueItem:51f397b83edf5f442f000c59
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c59
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":8}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":7}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Wake Up! Workflow:51f397b93edf5f442f000c6c
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c6c
+Logging>>Workflow Loaded!
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c7b
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c7c
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>updateQueueItem:51f397b93edf5f442f000c65
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c65
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000002
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000002
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c62
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>Workflow Loaded!
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c7d
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c7e
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7d
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000009
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000009
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7b
+Logging>>Updating property:workflowId to 51f397bb3edf5f442f000c7c
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>Got initiatingWorkflow
+Logging>>updateQueueItem:51f397b93edf5f442f000c6b
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c6b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000003
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000003
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c64
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7d
+Logging>>Updating property:workflowId to 51f397bb3edf5f442f000c7e
+Logging>>updateQueueItem:51f397b93edf5f442f000c61
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c61
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":6}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c7f
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c80
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>Wake Up! Workflow:51f397ba3edf5f442f000c72
+Logging>>workflowManager_getWorkflow:51f397ba3edf5f442f000c72
+Logging>>Wake Up! Workflow:51f397ba3edf5f442f000c76
+Logging>>workflowManager_getWorkflow:51f397ba3edf5f442f000c76
+Logging>>updateQueueItem:51f397b93edf5f442f000c63
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c63
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":5}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7f
+Logging>>Updating property:workflowId to 51f397bb3edf5f442f000c80
+Logging>>Workflow Loaded!
+Logging>>Workflow Loaded!
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c81
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397bb3edf5f442f000c82
+Logging>>updateQueueItem:51f397bb3edf5f442f000c81
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000009
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000009
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>updateQueueItem:51f397ba3edf5f442f000c71
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397ba3edf5f442f000c71
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000002
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000002
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c6e
+Logging>>updateQueueItem:51f397ba3edf5f442f000c75
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397ba3edf5f442f000c75
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000003
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000003
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaReady Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397ba3edf5f442f000c70
+Logging>>updateQueueItem:51f397bb3edf5f442f000c81
+Logging>>Updating property:workflowId to 51f397bb3edf5f442f000c82
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>updateQueueItem:51f397b93edf5f442f000c6d
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c6d
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":4}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397ba3edf5f442f000c6f
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397ba3edf5f442f000c6f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:HowManyPizzasAreCooking2 Type:getWorkingStorageValue
+Logging>>Finding Activity:getWorkingStorageValue
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:RemovePizzaFromOven Type:incrementWorkingStorage
+Logging>>Finding Activity:incrementWorkingStorage
+Logging>>workflowManager_incrementWorkingStorageValue:PizzasInOven amount:-1
+Logging>>new working storage value:{"value":3}
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Wake Up! Workflow:51f397ba3edf5f442f000c78
+Logging>>workflowManager_getWorkflow:51f397ba3edf5f442f000c78
+Logging>>Wake Up! Workflow:51f397ba3edf5f442f000c7a
+Logging>>workflowManager_getWorkflow:51f397ba3edf5f442f000c7a
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397bc3edf5f442f000c83
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397bc3edf5f442f000c84
+Logging>>updateQueueItem:51f397bc3edf5f442f000c83
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForCooking Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:CookingComplete Type:ifElseActivity
+Logging>>Finding Activity:ifElseActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:SendForDelivery Type:createChildWorkflow
+Logging>>Finding Activity:createChildWorkflow
+Logging>>This is a new queueItem
+Logging>>historyManager_AddingSubsystemWorker:51f397bc3edf5f442f000c85
+Logging>>createWorkflow of type:PizzaOrdering/deliveryWorkflow
+Logging>>Parameters:undefined
+Logging>>historyManager_AddingSubsystemWorker:51f397bc3edf5f442f000c86
+Logging>>updateQueueItem:51f397bc3edf5f442f000c85
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000009
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000009
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:false
+Logging>>Workflow Loaded!
+Logging>>Workflow Loaded!
+Logging>>updateQueueItem:51f397bc3edf5f442f000c83
+Logging>>Updating property:workflowId to 51f397bc3edf5f442f000c84
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:StartWorkflow Type:Init
+Logging>>Skipping the Init Step
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DeliveryRequestReceived Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:LoadPizzaInCar Type:writeLogActivity
+Logging>>Finding Activity:writeLogActivity
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:DriveToCustomer Type:waitForTimer
+Logging>>Finding Activity:waitForTimer
+Logging>>Next Step after wait:undefined
+Logging>>updateQueueItem:51f397bc3edf5f442f000c85
+Logging>>Updating property:workflowId to 51f397bc3edf5f442f000c86
+Logging>>updateQueueItem:51f397ba3edf5f442f000c77
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397ba3edf5f442f000c77
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000a
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000a
+Logging>>updateQueueItem:51f397ba3edf5f442f000c79
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397ba3edf5f442f000c79
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000b
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000b
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c4e
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c50
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>Wake Up! Workflow:51f397bb3edf5f442f000c7c
+Logging>>workflowManager_getWorkflow:51f397bb3edf5f442f000c7c
+Logging>>Wake Up! Workflow:51f397bb3edf5f442f000c7e
+Logging>>workflowManager_getWorkflow:51f397bb3edf5f442f000c7e
+Logging>>updateQueueItem:51f397b83edf5f442f000c4d
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c4d
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397b83edf5f442f000c4f
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c4f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Workflow Loaded!
+Logging>>Workflow Loaded!
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7b
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7b
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7d
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7d
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000009
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000009
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c58
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b83edf5f442f000c5a
+Logging>>Wake Up! Workflow:51f397bb3edf5f442f000c80
+Logging>>workflowManager_getWorkflow:51f397bb3edf5f442f000c80
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>Workflow Loaded!
+Logging>>Wake Up! Workflow:51f397bb3edf5f442f000c82
+Logging>>workflowManager_getWorkflow:51f397bb3edf5f442f000c82
+Logging>>updateQueueItem:51f397b83edf5f442f000c57
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c57
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>updateQueueItem:51f397b83edf5f442f000c59
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b83edf5f442f000c59
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7f
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397bb3edf5f442f000c7f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000a
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000a
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c62
+Logging>>Workflow Loaded!
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>updateQueueItem:51f397bb3edf5f442f000c81
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397bb3edf5f442f000c81
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c64
+Logging>>Got initiatingWorkflow
+Logging>>updateQueueItem:51f397b93edf5f442f000c61
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c61
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397b93edf5f442f000c63
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c63
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Wake Up! Workflow:51f397bc3edf5f442f000c84
+Logging>>workflowManager_getWorkflow:51f397bc3edf5f442f000c84
+Logging>>Wake Up! Workflow:51f397bc3edf5f442f000c86
+Logging>>workflowManager_getWorkflow:51f397bc3edf5f442f000c86
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Workflow Loaded!
+Logging>>Workflow Loaded!
+Logging>>updateQueueItem:51f397bc3edf5f442f000c83
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397bc3edf5f442f000c83
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000008
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000008
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397b93edf5f442f000c6e
+Logging>>updateQueueItem:51f397bc3edf5f442f000c85
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397bc3edf5f442f000c85
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000009
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000009
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:PizzaDelivered Type:updateInitiatingWorkflowActivity
+Logging>>Finding Activity:updateInitiatingWorkflowActivity
+Logging>>workflowManager_getWorkflow:51f397ba3edf5f442f000c70
+Logging>>Got initiatingWorkflow
+Logging>>Got initiatingWorkflow
+Logging>>updateQueueItem:51f397b93edf5f442f000c6d
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397b93edf5f442f000c6d
+Logging>>Updating property:lockedBy to 51f396693edf5f442f00000f
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f00000f
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>updateQueueItem:51f397ba3edf5f442f000c6f
+Logging>>Updating property:status to resume
+Logging>>updateQueueItem:51f397ba3edf5f442f000c6f
+Logging>>Updating property:lockedBy to 51f396693edf5f442f000010
+Logging>>Updating property:status to busy
+Logging>>Updating property:queueWorkerId to 51f396693edf5f442f000010
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:TrackPizzasDelivered Type:trackStatistic
+Logging>>Finding Activity:trackStatistic
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:WaitForDelivery Type:waitForActivity
+Logging>>Finding Activity:waitForActivity
+Logging>>Evaluated:true
+Logging>>workflowManager.processWorkflowActivity
+Logging>>Workflow step:Complete Type:completeWorkflow
+Logging>>Finding Activity:completeWorkflow
+Logging>>Req:/stats/view/
+Logging>>Req:/stats/view/
+Logging>>Req:/stats/view/
+Logging>>Req:/stats/view/

@@ -1,0 +1,8 @@
+(node) warning: possible EventEmitter memory leak detected. 11 listeners added. Use emitter.setMaxListeners() to increase limit.
+Trace: 
+    at EventEmitter.<anonymous> (events.js:139:15)
+    at Object.QueueWorker (C:\Users\khavas\SkyDrive\NodeFlows\node_modules\nodeFlows\queueWorker.js:31:30)
+    at Object.addQueueWorker (C:\Users\khavas\SkyDrive\NodeFlows\node_modules\nodeFlows\queueManager.js:219:23)
+    at C:\Users\khavas\SkyDrive\NodeFlows\node_modules\nodeFlows\workflowManager.js:158:38
+    at Array.forEach (native)
+    at Object.oncomplete (C:\Users\khavas\SkyDrive\NodeFlows\node_modules\nodeFlows\workflowManager.js:133:15)
